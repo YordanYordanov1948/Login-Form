@@ -1,20 +1,20 @@
 import React from "react";
-import "./LoginForm.css";
+import styles from "./LoginForm.module.css";
 
 function LoginForm() {
   return (
     <div>
-      <form className="form">
-        <label className="label" for="fname">
+      <form className={styles.form}>
+        <label className={styles.label} for="fname">
           Name
         </label>
-        <input type="text" className="input" name="fname" />
-        <label className="label" for="pass">
+        <input type="text" className={styles.input} name="fname" />
+        <label className={styles.label} for="pass">
           Password
         </label>
-        <input type="text" className="input" name="fname" />
+        <input type="text" className={styles.input} name="fname" />
       </form>
-      <button className="submit">Sumbit</button>
+      <button className={styles.submit}>Sumbit</button>
     </div>
   );
 }
